@@ -1037,11 +1037,11 @@ footer {
     }
 
     .home-text{
-        max-width: 85%;
+        max-width: 90%;
         margin: 0 auto;
     }
     .home-text h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .banner {
         padding: 100px 0 60px;
