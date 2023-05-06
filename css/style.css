@@ -1036,14 +1036,13 @@ footer {
         text-align: center;
     }
 
-    .home-text p,
-    .home-text ul {
-        max-width: 95%;
+    .home-text{
+        max-width: 85%;
         margin: 0 auto;
-        /* margin-left: 0%; */
-        /* background-color: yellow; */
     }
-
+    .home-text h1{
+        font-size: 1.5rem;
+    }
     .banner {
         padding: 100px 0 60px;
     }
