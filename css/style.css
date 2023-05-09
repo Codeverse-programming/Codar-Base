@@ -75,7 +75,6 @@
     border-radius: 20px;
     /* border: 3px solid orange;  creates padding around scroll thumb */
 }
-
 /* reset styles */
 * {
     color: inherit;
@@ -108,11 +107,16 @@ header {
     background-color: var(--white);
     border-bottom: 2px solid gainsboro;
 }
-
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .login a {
     color: var(--black);
     font-size: 0.9875rem;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .login a:hover {
@@ -124,17 +128,24 @@ header {
     display: flex;
     gap: 50px;
 }
-
+.button a{
+    text-decoration: none;
+}
 .button a button {
     background-color: transparent;
     border: 1px solid var(--black);
     border-radius: 10px;
     padding: 0.5em 1.5em;
     color: var(--black);
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 0.8875rem;
 }
-
+.button a button {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
 .link a {
     color: var(--black);
     font-weight: bold;
@@ -219,7 +230,9 @@ header {
 
 .home-text p,
 .home-text ul {
-    margin-left: 2%;
+    max-width: 95%;
+    margin: 0 auto;
+    /* margin-left: 2%; */
     /* background-color: yellow; */
 }
 
@@ -301,7 +314,17 @@ header {
     font-weight: bolder;
     font-size: 0.7875rem;
 }
-
+.fanbase-video{
+    text-align: center;
+    padding: 60px 0 60px;
+}
+.fanbase-video h3{
+    color: var(--black);
+    font-weight: bold;
+}
+.fanbase-video iframe{
+    width: 100%;
+}
 /* TRACTION SECTION */
 .traction-text {
     padding: 60px 0 0;
@@ -625,7 +648,15 @@ header {
     color: var(--black);
     font-size: 0.795rem;
 }
-
+.faq-section h6{
+    line-height: 2;
+    font-size: 1rem;
+    color: var(--black);
+}
+.faq-section p span{
+    color: var(--black);
+    font-weight: bold;
+}
 /* UPDATES SECTION */
 .updates {
     padding: 100px 0 0;
@@ -1041,7 +1072,8 @@ footer {
         margin: 0 auto;
     }
     .home-text h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
+        width: 100%;
     }
     .banner {
         padding: 100px 0 60px;
@@ -1050,5 +1082,11 @@ footer {
     .hero-img .text {
         left: 15%;
         font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .fanbase-video iframe{
+        width: 95%;
     }
 }
