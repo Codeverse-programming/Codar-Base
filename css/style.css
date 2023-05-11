@@ -75,6 +75,7 @@
     border-radius: 20px;
     /* border: 3px solid orange;  creates padding around scroll thumb */
 }
+
 /* reset styles */
 * {
     color: inherit;
@@ -107,17 +108,20 @@ header {
     background-color: var(--white);
     border-bottom: 2px solid gainsboro;
 }
-.header-nav ul li a{
+
+.header-nav ul li a {
     color: var(--black);
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.8875rem;
 }
-.login{
+
+.login {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .login a {
     color: var(--black);
     font-size: 0.9875rem;
@@ -133,9 +137,11 @@ header {
 .button {
     margin-right: 3%;
 }
-.button a{
+
+.button a {
     text-decoration: none;
 }
+
 .button a button {
     background-color: transparent;
     border: 1px solid var(--black);
@@ -145,12 +151,14 @@ header {
     font-weight: bolder;
     font-size: 0.8875rem;
 }
+
 .button a button {
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
 }
+
 .link a {
     color: var(--black);
     font-weight: bold;
@@ -320,18 +328,22 @@ header {
     font-weight: bolder;
     font-size: 0.7875rem;
 }
-.fanbase-video{
+
+.fanbase-video {
     text-align: center;
     margin: 0 0 2em;
 }
-.fanbase-video h3{
+
+.fanbase-video h3 {
     color: var(--black);
     font-weight: bold;
 }
-.fanbase-video iframe{
+
+.fanbase-video iframe {
     width: 100%;
     height: fit-content;
 }
+
 /* TRACTION SECTION */
 .traction-text {
     padding: 60px 0 0;
@@ -660,15 +672,18 @@ header {
     color: var(--black);
     font-size: 0.795rem;
 }
-.faq-section h6{
+
+.faq-section h6 {
     line-height: 2;
     font-size: 1rem;
     color: var(--black);
 }
-.faq-section p span{
+
+.faq-section p span {
     color: var(--black);
     font-weight: bold;
 }
+
 /* UPDATES SECTION */
 .updates {
     padding: 100px 0 0;
@@ -802,36 +817,44 @@ header {
 }
 
 /* DISCUSSION SECTION */
-.discussion{
+.discussion {
     padding: 100px 0 0;
 }
-.sub-discussion{
+
+.sub-discussion {
     display: flex;
     gap: 10px;
     margin-bottom: 2em;
     border-radius: 5px;
 }
-.all-discussion{
+
+.all-discussion {
     border-bottom: 4px dotted var(--black);
     padding-bottom: 2em;
 }
-.hold h6{
+
+.hold h6 {
     color: var(--codar);
     font-weight: bold;
 }
-.hold span{
+
+.hold span {
     color: var(--black);
     font-weight: bold;
     font-size: 1.5rem;
 }
-.sub-discussion h5{
+
+.sub-discussion h5 {
     font-weight: bold;
     margin-bottom: 0;
 }
-.sub-discussion p{
+
+.sub-discussion p {
     color: var(--black);
 }
-.sub-discussion .invest p,.sub-discussion .invest i{
+
+.sub-discussion .invest p,
+.sub-discussion .invest i {
     background-color: var(--codar);
     /* height: 4vh; */
     padding: 0.5em 0.5em;
@@ -839,7 +862,8 @@ header {
     color: var(--black);
     font-weight: bold;
 }
-.discussion-name p{
+
+.discussion-name p {
     background-color: var(--gray);
     border-radius: 50%;
     padding: 0.5em;
@@ -852,34 +876,40 @@ header {
     font-weight: bold;
     font-size: 1.3rem;
 }
-.discussion .comment p{
+
+.discussion .comment p {
     color: var(--black);
     font-weight: bold;
     font-size: 1.1rem;
     line-height: 2;
 }
-.discussion .comment{
+
+.discussion .comment {
     max-height: 10vh;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
 }
-.discuss #show-more:checked ~ .comment,
-.discuss #show-more-1:checked ~ .comment,
-.discuss #show-more-2:checked ~ .comment,
-.discuss #show-more-3:checked ~ .comment,
-.discuss #show-more-4:checked ~ .comment,
-.discuss #show-more-5:checked ~ .comment,
-.discuss #show-more-6:checked ~ .comment{
+
+.discuss #show-more:checked~.comment,
+.discuss #show-more-1:checked~.comment,
+.discuss #show-more-2:checked~.comment,
+.discuss #show-more-3:checked~.comment,
+.discuss #show-more-4:checked~.comment,
+.discuss #show-more-5:checked~.comment,
+.discuss #show-more-6:checked~.comment {
     transition: 0.5s ease-in-out;
     max-height: 100vh;
 }
-.discussion-icon p i{
+
+.discussion-icon p i {
     font-size: 1.5rem;
     padding-inline-end: 3%;
 }
-.discussion-icon p{
+
+.discussion-icon p {
     color: gray;
 }
+
 /* INVESTMENT SECTION */
 .investment {
     padding: 150px 0 0;
@@ -1083,10 +1113,12 @@ footer {
     background-color: var(--light);
     padding: 2em;
 }
-.footer-1{
+
+.footer-1 {
     text-align: center;
     margin: 0 auto;
 }
+
 .footer-1 .logo {
     padding-bottom: 5%;
 }
@@ -1136,29 +1168,35 @@ footer {
 .footer-3 ul li a {
     color: var(--text-1);
 }
+
 /* MESSAGE SECTION */
-.message h5{
+.message h5 {
     color: var(--black);
     font-weight: bold;
 }
-.important{
+
+.important {
     padding: 60px 0 60px;
 }
-.message p a{
+
+.message p a {
     color: var(--codar-1);
     font-weight: bold;
     text-decoration: none;
 }
-.message p{
+
+.message p {
     font-size: 0.6875rem;
 }
+
 @media only screen and (max-width:1024px) {
-.header-nav ul li a {
-    font-size: 0.5875rem;
-}
-.hero-img .text{
-    font-size: 1rem;
-}
+    .header-nav ul li a {
+        font-size: 0.5875rem;
+    }
+
+    .hero-img .text {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width:991px) {
@@ -1182,14 +1220,16 @@ footer {
         text-align: center;
     }
 
-    .home-text{
+    .home-text {
         /* max-width: 90%; */
         margin: 0 auto;
     }
-    .home-text h1{
+
+    .home-text h1 {
         font-size: 1.5rem;
         width: 100%;
     }
+
     .banner {
         padding: 100px 0 60px;
     }
@@ -1201,10 +1241,18 @@ footer {
 }
 
 @media only screen and (max-width:414px) {
-    .nav-logo img{
+    .nav-logo img {
         height: 30px;
     }
-    .sub-reward{
+
+    .sub-reward {
         height: 30vh;
     }
+.faq-section h6 {
+    font-size: 0.5575rem;
+}
+.faq-section p {
+    font-size: 0.6875rem;
+    line-height: 1;
+}
 }
