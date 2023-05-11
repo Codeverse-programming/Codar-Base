@@ -998,7 +998,7 @@ header {
     text-align: center;
 }
 
-.form-section img {
+.form-img img {
     width: 80%;
 }
 
@@ -1083,6 +1083,7 @@ header {
 }
 .button-container{
     display: flex;
+    justify-content: space-evenly;
 }
 .button-container .button a button {
     padding: 0.5em 3em;
@@ -1256,5 +1257,8 @@ footer {
 .faq-section p {
     font-size: 0.6875rem;
     line-height: 1;
+}
+.button-container{
+    gap: 30px;
 }
 }
