@@ -970,7 +970,7 @@ header {
 }
 
 .form-container {
-    width: 75%;
+    width: 100%;
     margin: 1rem;
     padding: 2rem;
 }
@@ -999,7 +999,7 @@ header {
 }
 
 .form-section img {
-    width: 90%;
+    width: 80%;
 }
 
 .form__message {
@@ -1081,7 +1081,9 @@ header {
 .form__link:hover {
     text-decoration: underline;
 }
-
+.button-container{
+    display: flex;
+}
 .button-container .button a button {
     padding: 0.5em 3em;
     font-size: 1.3rem;
