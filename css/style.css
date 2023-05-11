@@ -1081,10 +1081,12 @@ header {
 .form__link:hover {
     text-decoration: underline;
 }
-.button-container{
+
+.button-container {
     display: flex;
     justify-content: space-evenly;
 }
+
 .button-container .button a button {
     padding: 0.5em 3em;
     font-size: 1.3rem;
@@ -1251,14 +1253,22 @@ footer {
     .sub-reward {
         height: 30vh;
     }
-.faq-section h6 {
-    font-size: 0.5575rem;
-}
-.faq-section p {
-    font-size: 0.6875rem;
-    line-height: 1;
-}
-.button-container{
-    gap: 30px;
-}
+
+    .faq-section h6 {
+        font-size: 0.5575rem;
+    }
+
+    .faq-section p {
+        font-size: 0.6875rem;
+        line-height: 1;
+    }
+
+    .button-container {
+        /* gap: 30px; */
+        justify-content: center;
+        align-items: center;
+    }
+    .form-section{
+        padding: 100px 0 0;
+    }
 }
