@@ -322,7 +322,7 @@ header {
 }
 .fanbase-video{
     text-align: center;
-    padding: 30px 0 20px;
+    margin: 0 0 2em;
 }
 .fanbase-video h3{
     color: var(--black);
@@ -330,6 +330,7 @@ header {
 }
 .fanbase-video iframe{
     width: 100%;
+    height: fit-content;
 }
 /* TRACTION SECTION */
 .traction-text {
@@ -352,7 +353,7 @@ header {
 .traction-text h1 {
     color: var(--black);
     font-weight: bolder;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     /* padding: 3% 0; */
     font-size: 2.3rem;
 }
@@ -866,7 +867,9 @@ header {
 .discuss #show-more-1:checked ~ .comment,
 .discuss #show-more-2:checked ~ .comment,
 .discuss #show-more-3:checked ~ .comment,
-.discuss #show-more-4:checked ~ .comment{
+.discuss #show-more-4:checked ~ .comment,
+.discuss #show-more-5:checked ~ .comment,
+.discuss #show-more-6:checked ~ .comment{
     transition: 0.5s ease-in-out;
     max-height: 100vh;
 }
