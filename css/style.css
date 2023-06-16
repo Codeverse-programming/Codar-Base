@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=IBM+Plex+Sans&family=Inter&family=Poppins:wght@300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -40,7 +43,8 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family: Poppins;
+    --font-family-bold: 'IBM Plex Sans', sans-serif;
+    --font-family-normal: 'IBM Plex Sans', sans-serif;
     /* spacing */
     --base-padding: 0.75rem;
     --base-margin: 0.75rem;
@@ -84,9 +88,14 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: IBM Plex Sans;
+    /* font-family: var(--font-family-normal); */
 }
-
+p,span,h6{
+    font-family: var(--font-family-normal);
+}
+h1{
+    font-family: var(--font-family-bold);
+}
 body {
     /* background-color: var(--lightbg); */
 }
@@ -103,7 +112,7 @@ header {
 }
 
 .header-nav {
-    padding: 1% 12% 1% 2%;
+    /* padding: 1% 12% 1% 2%; */
     box-shadow: none;
     background-color: var(--white);
     border-bottom: 2px solid gainsboro;
@@ -113,6 +122,7 @@ header {
     color: var(--black);
     font-weight: bold;
     text-transform: uppercase;
+    font-family: var(--font-family-normal);
     font-size: 0.8875rem;
 }
 
@@ -126,6 +136,7 @@ header {
     color: var(--black);
     font-size: 0.9875rem;
     font-weight: bold;
+    font-family: var(--font-family-normal);
     text-decoration: none;
 }
 
@@ -147,6 +158,7 @@ header {
     border: 1px solid var(--black);
     border-radius: 10px;
     padding: 0.5em;
+    font-family: var(--font-family-normal);
     color: var(--black);
     font-weight: bolder;
     font-size: 0.8875rem;
@@ -154,6 +166,7 @@ header {
 
 .button a button {
     display: flex;
+    font-family: var(--font-family-normal);
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -181,14 +194,22 @@ header {
 
 .hero-text h1 {
     font-weight: bold;
+    font-size: 2rem;
+    font-family: var(--font-family-bold);
     color: var(--codar-1);
 }
 
 .hero-text p {
-    font-weight: bold;
-    font-size: 0.8875rem;
+    font-size: 0.7875rem;
+    line-height: 1.5;
+    color: var(--black);
 }
-
+.hero-text .reg-text{
+    letter-spacing: 0;
+    color: var(--black);
+    line-height: 1.5;
+    font-size: 0.6875rem;
+}
 .hero-button a button {
     background-color: var(--codar-1);
     padding: 0.3em 0.5em;
@@ -207,7 +228,7 @@ header {
     width: fit-content;
     position: relative;
     border-radius: 20px;
-    width: 80%;
+    width: 100%;
 }
 
 .hero-img img {
@@ -262,7 +283,7 @@ header {
     letter-spacing: 3px;
     padding-bottom: 2%;
     color: var(--black);
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .reason-text p {
@@ -331,7 +352,7 @@ header {
 
 .fanbase-video {
     text-align: center;
-    margin: 0 0 2em;
+    /* margin: 0 0 2em; */
 }
 
 .fanbase-video h3 {
@@ -341,7 +362,6 @@ header {
 
 .fanbase-video iframe {
     width: 100%;
-    height: fit-content;
 }
 
 /* TRACTION SECTION */
@@ -1193,15 +1213,20 @@ footer {
 .message p {
     font-size: 0.6875rem;
 }
-
+.add input{
+    padding: 2em 1em;
+    border-radius: 10px;
+    background-color: gainsboro;
+}
+.add button{
+    background-color: gainsboro;
+    padding: 1em 2em;
+    border: none;
+}
 @media only screen and (max-width:1024px) {
-    .header-nav ul li a {
-        font-size: 0.5875rem;
-    }
-
-    .hero-img .text {
+    /* .hero-img .text {
         font-size: 1rem;
-    }
+    } */
 }
 
 @media only screen and (max-width:991px) {
@@ -1231,7 +1256,7 @@ footer {
     }
 
     .home-text h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         width: 100%;
     }
 
